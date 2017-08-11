@@ -20,9 +20,17 @@ namespace SonOfCod.tests.ControllerTests
         {
             AccountController controller = new AccountController();
             IActionResult actionResult = controller.Index();
-            ViewResult indexView = controller.Index() as ViewResult;
+            ViewResult indexView = new AccountController().Index() as ViewResult;
             var result = indexView.ViewData.Model;
             Assert.IsType<List<AccountControllerTests>>(result);
+        }
+
+        [Fact]
+        public void Get_ViewResult_Create_Test()
+        {
+            AccountController controller = new AccountController();
+            var result = controller.Create();
+            Assert.IsType<ViewResult>(result);
         }
     }
 }

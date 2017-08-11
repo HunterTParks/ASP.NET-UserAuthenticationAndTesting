@@ -19,18 +19,13 @@ namespace SonOfCodWebsite.Controllers
             _signInManger = signInManager;
             _db = db;
         }
-
-        public AccountController()
-        {
-
-        }
         
         public IActionResult Index()
         {
             return View(_db.Users.ToList());
         }
 
-        public IActionResult Register()
+        public IActionResult Create()
         {
             return View();
         }
