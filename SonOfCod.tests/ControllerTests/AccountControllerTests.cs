@@ -21,23 +21,23 @@ namespace SonOfCod.tests.ControllerTests
             Assert.IsType<ViewResult>(result);
         }
 
-        [Fact]
-        public void Get_ViewResult_Index_Test()
-        {
-            AccountController controller = new AccountController(_userManager, _signInManger, _db);
-            var result = controller.Index();
-            Assert.IsType<ViewResult>(result);
-        }
+        //[Fact]
+        //public void Get_ViewResult_Index_Test()
+        //{
+            //AccountController controller = new AccountController(_userManager, _signInManger, _db);
+            //var result = controller.Index();
+            //Assert.IsType<ViewResult>(result);
+        //}
 
-        [Fact]
-        public void Get_ModelList_Index_Test()
-        {
-            AccountController controller = new AccountController(_userManager, _signInManger, _db);
-            IActionResult actionResult = controller.Index();
-            ViewResult indexView = actionResult as ViewResult;
-            var result = indexView.ViewData.Model;
-            Assert.IsType<List<AccountControllerTests>>(result);
-        }
+        //[Fact]
+        //public void Get_ModelList_Index_Test()
+        //{
+            //AccountController controller = new AccountController(_userManager, _signInManger, _db);
+            //IActionResult actionResult = controller.Index();
+            //ViewResult indexView = new AccountController(_userManager, _signInManger, _db).Index() as ViewResult;
+            //var result = indexView.ViewData.Model;
+            //Assert.IsType<List<AccountControllerTests>>(result);
+        //}
 
         [Fact]
         public void Get_ViewResult_Create_Test()
