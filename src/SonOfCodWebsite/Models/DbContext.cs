@@ -6,5 +6,8 @@ namespace SonOfCodWebsite.Models
     public class DbContext : IdentityDbContext<User>
     {
         public DbContext(DbContextOptions options) : base(options)
+        {
+
+        }
     }
 }
