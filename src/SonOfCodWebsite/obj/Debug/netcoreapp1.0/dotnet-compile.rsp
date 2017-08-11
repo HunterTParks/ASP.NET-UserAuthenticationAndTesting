@@ -202,6 +202,8 @@
 --resource:"c:\users\reptar2693\documents\visual studio 2015\Projects\SonOfCodWebsite\src\SonOfCodWebsite\obj\Debug\netcoreapp1.0\SonOfCodWebsitedotnet-compile.deps.json",SonOfCodWebsite.deps.json
 c:\users\reptar2693\documents\visual studio 2015\Projects\SonOfCodWebsite\src\SonOfCodWebsite\Program.cs
 c:\users\reptar2693\documents\visual studio 2015\Projects\SonOfCodWebsite\src\SonOfCodWebsite\Startup.cs
+c:\users\reptar2693\documents\visual studio 2015\Projects\SonOfCodWebsite\src\SonOfCodWebsite\Controllers\AccountController.cs
+c:\users\reptar2693\documents\visual studio 2015\Projects\SonOfCodWebsite\src\SonOfCodWebsite\Controllers\HomeController.cs
 c:\users\reptar2693\documents\visual studio 2015\Projects\SonOfCodWebsite\src\SonOfCodWebsite\Migrations\20170811160419_Initial.cs
 c:\users\reptar2693\documents\visual studio 2015\Projects\SonOfCodWebsite\src\SonOfCodWebsite\Migrations\20170811160419_Initial.Designer.cs
 c:\users\reptar2693\documents\visual studio 2015\Projects\SonOfCodWebsite\src\SonOfCodWebsite\Migrations\ApplicationDbContextModelSnapshot.cs
