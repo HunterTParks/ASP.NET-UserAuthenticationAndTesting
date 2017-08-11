@@ -2,4 +2,12 @@
     ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/_layout.cshtml";
 }
-Account Index page
+
+@model IEnumerable<SonOfCodWebsite.Models.ApplicationUser>
+
+<ul>
+    @foreach(var user in Model)
+    {
+        <li>@user</li>
+    }
+</ul>
