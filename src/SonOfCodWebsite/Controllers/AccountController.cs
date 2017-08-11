@@ -18,6 +18,11 @@ namespace SonOfCodWebsite.Controllers
             _signInManger = signInManager;
             _db = db;
         }
+
+        public AccountController()
+        {
+
+        }
         
         public IActionResult Index()
         {
