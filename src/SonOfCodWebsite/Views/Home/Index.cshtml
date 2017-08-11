@@ -6,6 +6,24 @@
 @using System.Security.Claims
 
 <h2>Home Page</h2>
-@Html.ActionLink("See Users", "Index", "Account")
-@Html.ActionLink("Register new user", "Create", "Account")
 
+<div class="accordion">
+    <ul>
+        <li>
+            <div>
+                <a href="/Account/SignUp">
+                    <h2>Join our Family!</h2>
+                    <p>Sign up for our weekly newsletter to get special deals and info about upcoming events!</p>
+                </a>
+            </div>
+        </li>
+        <li>
+            <div>
+                <a href="#">
+                    <h2>Some Text</h2>
+                    <p>Some placeholder text goes here.</p>
+                </a>
+            </div>
+        </li>
+    </ul>
+</div>
