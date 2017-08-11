@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = "Administrator Login";
+    Layout = "~/Views/Shared/_layout.cshtml";
+}
+@using SonOfCodWebsite.ViewModels
+@model NewsletterViewModel
+
+@using (Html.BeginForm())
+{
+    @Html.LabelFor(s => s.Email)
+    @Html.TextBoxFor(s => s.Email)
+
+    <input type="submit" class="btn"/>
+}
