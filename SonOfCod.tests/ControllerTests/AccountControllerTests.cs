@@ -1,8 +1,7 @@
 ﻿using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
-using SonOfCodWebsite.Controllers;
-using SonOfCodWebsite.Models;
 using Xunit;
+using SonOfCodWebsite.Controllers;
 
 namespace SonOfCod.tests.ControllerTests
 {
