@@ -1,2 +1,12 @@
 ﻿body {
 }
+
+footer{
+    position: fixed;
+    width: 100%;
+    left: 0px;
+    height:70px;
+    padding: 5px;
+    bottom: 0px;
+    border: 2px solid black;
+}

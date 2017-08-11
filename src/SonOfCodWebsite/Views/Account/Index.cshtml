@@ -5,11 +5,14 @@
 
 @model IEnumerable<SonOfCodWebsite.Models.ApplicationUser>
 
-<ul>
-    @foreach(var user in Model)
-    {
-        <li>@user</li>
-    }
-</ul>
+@if(User.Identity.IsAuthenticated)
+{
+    <ul>
+        @foreach(var user in Model)
+        {
+            <li>@user</li>
+        }
+    </ul>
+}
 
 @Html.ActionLink("Create new User", "Create")
