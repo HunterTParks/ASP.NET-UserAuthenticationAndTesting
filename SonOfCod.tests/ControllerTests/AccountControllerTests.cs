@@ -15,5 +15,15 @@ namespace SonOfCod.tests.ControllerTests
             var result = controller.Index();
             Assert.IsType<ViewResult>(result);
         }
+
+        [Fact]
+        public void Get_ModelList_Index_Test()
+        {
+            AccountController controller = new AccountController();
+            IActionResult actionResult = controller.Index();
+            ViewResult indexView = controller.Index() as ViewResult;
+            var result = indexView.ViewData.Model;
+            Assert.IsType<List<AccountControllerTests>>(result);
+        }
     }
 }
