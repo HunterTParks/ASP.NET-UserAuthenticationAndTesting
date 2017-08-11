@@ -4266,6 +4266,7 @@
         "dependencies": {
           "Microsoft.NETCore.App": "1.0.0",
           "NETStandard.Library": "1.6.0",
+          "SonOfCodWebsite": "1.0.0",
           "dotnet-test-xunit": "2.2.0-beta2-build3300",
           "xunit": "2.1.0"
         },
