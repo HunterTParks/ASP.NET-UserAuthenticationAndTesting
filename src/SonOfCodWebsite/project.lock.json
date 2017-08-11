@@ -4059,6 +4059,19 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
+      },
+      "SonOfCod.tests/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v1.6",
+        "dependencies": {
+          "NETStandard.Library": "1.6.0"
+        },
+        "compile": {
+          "netstandard1.6/SonOfCod.tests.dll": {}
+        },
+        "runtime": {
+          "netstandard1.6/SonOfCod.tests.dll": {}
+        }
       }
     }
   },
@@ -10408,6 +10421,11 @@
         "ref/xamarintvos10/_._",
         "ref/xamarinwatchos10/_._"
       ]
+    },
+    "SonOfCod.tests/1.0.0": {
+      "type": "project",
+      "path": "../../SonOfCod.tests/project.json",
+      "msbuildProject": "../../SonOfCod.tests/SonOfCod.tests.xproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -10423,7 +10441,8 @@
       "Microsoft.Extensions.Configuration.FileExtensions >= 1.0.0",
       "Microsoft.Extensions.Configuration.Json >= 1.0.0",
       "Microsoft.Extensions.Logging.Console >= 1.0.0",
-      "Microsoft.NETCore.App >= 1.0.1"
+      "Microsoft.NETCore.App >= 1.0.1",
+      "SonOfCod.tests >= 1.0.0-*"
     ],
     ".NETCoreApp,Version=v1.0": []
   },
