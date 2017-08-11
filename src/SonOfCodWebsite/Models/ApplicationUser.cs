@@ -2,7 +2,7 @@
 
 namespace SonOfCodWebsite.Models
 {
-    public class User
+    public class ApplicationUser : IdentityUser
     {
     }
 }

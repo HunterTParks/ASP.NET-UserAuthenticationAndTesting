@@ -5,7 +5,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Configuration;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore;
-using BasicAuthentication.Models;
+using SonOfCodWebsite.Models;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 namespace SonOfCodWebsite
@@ -28,7 +28,7 @@ namespace SonOfCodWebsite
             services.AddEntityFramework()
                 .AddDbContext<ApplicationDbContext>(options =>
                     options.UseSqlServer(Configuration["ConnectionStrings:DefaultConnection"]));
-            services.AddIdentity<ApplicationUser, IdentityRole>()
+            services.AddIdentity<User, IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>()
                 .AddDefaultTokenProviders();
         }

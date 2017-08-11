@@ -3,9 +3,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace SonOfCodWebsite.Models
 {
-    public class DbContext : IdentityDbContext<User>
+    public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
-        public DbContext(DbContextOptions options) : base(options)
+        public ApplicationDbContext(DbContextOptions options) : base(options)
         {
 
         }
