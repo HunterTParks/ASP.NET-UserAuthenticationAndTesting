@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Identity;
 using SonOfCodWebsite.Models;
 using SonOfCodWebsite.ViewModels;
 using System.Threading.Tasks;
+using System.Linq;
 
 namespace SonOfCodWebsite.Controllers
 {
@@ -26,7 +27,7 @@ namespace SonOfCodWebsite.Controllers
         
         public IActionResult Index()
         {
-            return View();
+            return View(_db.Users.ToList());
         }
 
         public IActionResult Register()
