@@ -67,15 +67,8 @@ namespace SonOfCodWebsite.Controllers
         [HttpPost]
         public async Task<IActionResult> LogOff()
         {
-            if(User.Identity.IsAuthenticated)
-            {
-                await _signInManger.SignOutAsync();
-                return RedirectToAction("Index");
-            }
-            else
-            {
-                return RedirectToAction("Index");
-            }
+            await _signInManger.SignOutAsync();
+            return RedirectToAction("Login");
         }
 
         public IActionResult SignUp()

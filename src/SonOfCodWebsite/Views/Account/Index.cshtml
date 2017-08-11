@@ -5,8 +5,12 @@
 
 @model IEnumerable<SonOfCodWebsite.Models.ApplicationUser>
 
-@if(User.Identity.IsAuthenticated)
+@if (User.Identity.IsAuthenticated)
 {
+    @using (Html.BeginForm("LogOff", "Account"))
+    {
+        <input type="submit" class="btn" value="LogOff" />
+    }    
     <ul>
         @foreach(var user in Model)
         {
@@ -16,6 +20,6 @@
 } else
 {
     <p>Sorry, You are not allowed to view this page</p>
-
+    <p>@Html.ActionLink("Log in", "Login")</p>
 }
-@Html.ActionLink("Create new User", "Create")
+<p>@Html.ActionLink("Create new User", "Create")</p>
