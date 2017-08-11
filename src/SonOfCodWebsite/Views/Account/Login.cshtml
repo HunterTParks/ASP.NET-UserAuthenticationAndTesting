@@ -1,1 +1,18 @@
-﻿
+﻿@{ 
+    ViewData["Title"] = "Administrator Login";
+    Layout = "~/Views/Shared/_layout.cshtml";
+}
+@using SonOfCodWebsite.ViewModels
+@model LoginViewModel
+
+<h3>Log in Credentials</h3>
+@using (Html.BeginForm())
+{
+    @Html.LabelFor(u => u.Email)
+    @Html.TextBoxFor(u => u.Email)
+
+    @Html.LabelFor(u => u.Password)
+    @Html.PasswordFor(u => u.Password)
+
+    <input type="submit" value="Log In" class="btn"/>
+}
